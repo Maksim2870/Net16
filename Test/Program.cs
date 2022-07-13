@@ -17,12 +17,12 @@ namespace Test
             int haight = 0;
             while (response != -1)
             {
-                Console.WriteLine(@"Enter 0 to enter  name" + Environment.NewLine +
+                Console.WriteLine("Enter 0 to enter  name" + Environment.NewLine +
                                   "Enter 1 to enter surname" + Environment.NewLine +
                                   "Enter 2 to enter age" + Environment.NewLine +
-                                  "Enter 3 to print your appll" + Environment.NewLine +
-                                  "Enter -1 to exit" + Environment.NewLine +
-#
+                                  "Enter 3 to enter haight" + Environment.NewLine +
+                                  "Enter -1 to enter exit");
+                                  
                 response = int.Parse(Console.ReadLine());
                 switch (response)
                 {
@@ -38,7 +38,7 @@ namespace Test
                     case 1:
                         {
 
-                            Console.WriteLine("surname");
+                            Console.WriteLine("enter surname");
                             surname = Console.ReadLine();
                             break;
                         }
@@ -53,7 +53,7 @@ namespace Test
                     case 3:
                         {
 
-                            Console.WriteLine("print your appll");
+                            Console.WriteLine("haight");
                             Console.WriteLine("");
                             Console.WriteLine("");
                             Console.WriteLine("");
@@ -63,11 +63,12 @@ namespace Test
                     case -1:
                         {
 
-                            Console.WriteLine("exit");
+                            Console.WriteLine("enter exit");
                             age = int.Parse(Console.ReadLine());
                             break;
                         }
                     
+
                     default:
                         {
                             Console.WriteLine("You entered wrong number");

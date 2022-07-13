@@ -17,12 +17,12 @@ namespace Test
             int haight = 0;
             while (response != -1)
             {
-                Console.WriteLine("Enter 0 to enter your name" + Environment.NewLine +
-                                  "Enter 1 to enter name" + Environment.NewLine +
-                                  "Enter 2 to enter surname" + Environment.NewLine +
-                                  "Enter 3 to enter age" + Environment.NewLine +
-                                  "Enter -1 to enter haight" + Environment.NewLine +
-                                  "Enter -2 to print exit");
+                Console.WriteLine(@"Enter 0 to enter  name" + Environment.NewLine +
+                                  "Enter 1 to enter surname" + Environment.NewLine +
+                                  "Enter 2 to enter age" + Environment.NewLine +
+                                  "Enter 3 to print your appll" + Environment.NewLine +
+                                  "Enter -1 to exit" + Environment.NewLine +
+#
                 response = int.Parse(Console.ReadLine());
                 switch (response)
                 {
@@ -30,7 +30,7 @@ namespace Test
 
                     case 0:
                         {
-                            Console.WriteLine("enter your name");
+                            Console.WriteLine("enter  name");
                             name = Console.ReadLine();
                             break;
                         }
@@ -38,7 +38,7 @@ namespace Test
                     case 1:
                         {
 
-                            Console.WriteLine("enter name");
+                            Console.WriteLine("surname");
                             surname = Console.ReadLine();
                             break;
                         }
@@ -46,14 +46,14 @@ namespace Test
                     case 2:
                         {
 
-                            Console.WriteLine("enter surname");
+                            Console.WriteLine("enter age");
                             age = int.Parse(Console.ReadLine());
                             break;
                         }
                     case 3:
                         {
 
-                            Console.WriteLine("enter age");
+                            Console.WriteLine("print your appll");
                             Console.WriteLine("");
                             Console.WriteLine("");
                             Console.WriteLine("");
@@ -63,18 +63,11 @@ namespace Test
                     case -1:
                         {
 
-                            Console.WriteLine("enter haight");
+                            Console.WriteLine("exit");
                             age = int.Parse(Console.ReadLine());
                             break;
                         }
-                    case -2:
-                        {
-
-                            Console.WriteLine("print exit");
-                            age = int.Parse(Console.ReadLine());
-                            break;
-                        }
-
+                    
                     default:
                         {
                             Console.WriteLine("You entered wrong number");

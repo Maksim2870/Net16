@@ -16,12 +16,12 @@ namespace Test
             int response = 0;
             while (response != -1)
             {
-                Console.WriteLine("Enter 0 to enter name" + Environment.NewLine +
-                                  "Enter 1 to enter surname" + Environment.NewLine +
-                                  "Enter 1 to enter surname" + Environment.NewLine +
-                                  "Enter 2 to enter age" + Environment.NewLine +
+                Console.WriteLine("Enter 0 to enter your name" + Environment.NewLine +
+                                  "Enter 1 to enter name" + Environment.NewLine +
+                                  "Enter 2 to enter surname" + Environment.NewLine +
+                                  "Enter 3 to enter age" + Environment.NewLine +
                                   "Enter -1 tp exit" + Environment.NewLine +
-                                  "Enter-2 tp print exit");
+                                  "Enter -2 tp print exit");
                 response = int.Parse(Console.ReadLine());
                 switch (response)
                 {
@@ -29,7 +29,7 @@ namespace Test
 
                     case -0:
                         {
-                            Console.WriteLine("Enter your name");
+                            Console.WriteLine("enter your name");
                             name = Console.ReadLine();
                             break;
                         }
@@ -37,7 +37,7 @@ namespace Test
                     case -1:
                         {
 
-                            Console.WriteLine();
+                            Console.WriteLine("enter name");
                             surname = Console.ReadLine();
                             break;
                         }
@@ -45,11 +45,19 @@ namespace Test
                     case -2:
                         {
 
-                            Console.WriteLine("Enter your age");
+                            Console.WriteLine("enter surname");
                             age = int.Parse(Console.ReadLine());
                             break;
                         }
-                   default:
+                    case -3:
+                        {
+
+                            Console.WriteLine("enter age");
+                            age = int.Parse(Console.ReadLine());
+                            break;
+                        }
+
+                     default:
                         {
                             Console.WriteLine("You entered wrong number");
                             break;

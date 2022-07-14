@@ -10,74 +10,59 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            string name = "Maksim";
-            string surname = "Babich";
-            int age = 42;
             int response = 0;
-            int haight = 0;
+            string name = "";
+            string surname = "";
+            int age = 0;
             while (response != -1)
             {
                 Console.WriteLine("Enter 0 to enter  name" + Environment.NewLine +
                                   "Enter 1 to enter surname" + Environment.NewLine +
                                   "Enter 2 to enter age" + Environment.NewLine +
-                                  "Enter 3 to enter haight" + Environment.NewLine +
-                                  "Enter -1 to enter exit");
+                                  "Enter -2 to print your application" + Environment.NewLine +
+                                  "Enter -1 to exit");
                                   
                 response = int.Parse(Console.ReadLine());
                 switch (response)
                 {
-
-
                     case 0:
                         {
-                            Console.WriteLine("enter  name");
                             name = Console.ReadLine();
                             break;
                         }
-
                     case 1:
                         {
-
-                            Console.WriteLine("enter surname");
                             surname = Console.ReadLine();
                             break;
                         }
 
                     case 2:
                         {
-
-                            Console.WriteLine("enter age");
                             age = int.Parse(Console.ReadLine());
                             break;
                         }
-                    case 3:
+                    case -2:
                         {
-
-                            Console.WriteLine("haight");
-                            Console.WriteLine("");
-                            Console.WriteLine("");
-                            Console.WriteLine("");
-                            age = int.Parse(Console.ReadLine());
+                            Console.WriteLine(name);
+                            Console.WriteLine(surname);
+                            Console.WriteLine(age);
                             break;
                         }
                     case -1:
                         {
-
-                            Console.WriteLine("enter exit");
-                            age = int.Parse(Console.ReadLine());
+                            Console.WriteLine("You exited program");
                             break;
                         }
-                    
-
-                    default:
+                   default:
                         {
-                            Console.WriteLine("You entered wrong number");
+                            Console.WriteLine("Not valid command");
                             break;
                         }
-
                 }
                 
             }
+            Console.ReadKey();
+            
 
         }
     }

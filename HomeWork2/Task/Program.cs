@@ -25,9 +25,9 @@ namespace Task
                 }
                 Console.WriteLine(h2);
             }
-            factorial(5); ;
+            factorial(7); 
             }
 
         }
     }
-}
+ }

@@ -17,7 +17,7 @@ namespace Task2._2
             int a = int.Parse(aText);
             int b = int.Parse(bText);
               do
-            {
+            { 
                 Console.Write(a + ", ");
                 a++;
             }

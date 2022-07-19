@@ -42,7 +42,7 @@ namespace Task__4_from_the_15._07._2022
                 }
                 else
                 {
-                    Console.WriteLine("Ошибка! Введите символ вычисления.");
+                    Console.WriteLine("Ошибка! Введите символ вычсления.");
                 }
                 Console.WriteLine("Продолжить / Закрыть? (y/n)");
                 again = Convert.ToChar(Console.ReadLine());

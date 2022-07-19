@@ -13,27 +13,17 @@ namespace Task_4._2_from_the_15._07._2022
             double A , B , C;
             double[] variables = new double[3];
             bool result = true;
-            for (int i = 0; i < 3; i++)
-            {
-                if (i == 0)
-                    Console.Write("Введите значение числа A = ");
-                else if (i == 1)
-                    Console.Write("Введите значение числа B = ");
-                else if (i == 2)
-                    Console.Write("Введите значение числа C = ");
-                variables[i] = double.Parse(Console.ReadLine());
-            }
             A = variables[0];
             B = variables[1];
             C = variables[2];
             Console.WriteLine();
             Console.WriteLine(
               "Выбирете одно из условий:" +
-              "\nа) Только одно из чисел А и В четное;" +        Environment.NewLine +
-              "\nб) Только одно из чисел A и B и С меньше 50;" + Environment.NewLine +
-              "\nв) Одно из чисел А и В положительное;" +        Environment.NewLine +
-              "\nг) Одно из чисел A, B, C отрицательное;" +      Environment.NewLine +
-              "\nд) Каждое из чисел А, В, С кратно трем;" +      Environment.NewLine +
+              "\nа) Только одно из чисел А и В четное;" +        
+              "\nб) Только одно из чисел A и B и С меньше 50;" + 
+              "\nв) Одно из чисел А и В положительное;" +       
+              "\nг) Одно из чисел A, B, C отрицательное;" +     
+              "\nд) Каждое из чисел А, В, С кратно трем;" +     
               "\nе) Каждое из чисел A, B, больше 100.");
             string s = Console.ReadLine();
             Console.WriteLine();
